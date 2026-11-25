@@ -1,0 +1,46 @@
+{
+  "dry_run": true,
+  "platform": "google",
+  "tenant": "example-tenant",
+  "owner_notify_channel": "console",
+  "thresholds": {
+    "D1_max_hours_between_logins": 2,
+    "D2_max_downloads": 20,
+    "D2_window_minutes": 10,
+    "D5_max_failures": 5,
+    "D5_window_minutes": 15,
+    "D5_success_after_minutes": 60,
+    "D6_dormant_days": 90,
+    "freeze_hours_default": 4
+  },
+  "sensitive_keywords": [
+    "finance",
+    "password",
+    "contract",
+    "payroll",
+    "invoice",
+    "tax",
+    "банків",
+    "пароль",
+    "договір"
+  ],
+  "internal_domains": [
+    "example.com",
+    "example.com"
+  ],
+  "oauth_allowlist": [
+    "Google",
+    "Microsoft",
+    "Slack",
+    "Zoom"
+  ],
+  "oauth_broad_scopes": [
+    "mail.read.all",
+    "mail.send",
+    "drive.read.all",
+    "drive.write",
+    "offline_access",
+    "https://mail.google.com/",
+    "https://www.googleapis.com/auth/drive"
+  ]
+}
